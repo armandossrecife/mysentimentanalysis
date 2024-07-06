@@ -12,13 +12,19 @@ Enable GPU in your machine.
 
 Install [requirements](https://github.com/armandossrecife/mysentimentanalysis/blob/main/requirements.txt).
 
+**Create the folder results**:
+
+```bash
+mkdir results
+```
+
 **Running this example**: 
 
 ```bash
 python3 main.py
 ```
 
-Input/Output
+**Input/Output**
 
 Input:
 ```bash
