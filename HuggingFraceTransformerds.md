@@ -6,7 +6,7 @@ Hugging Face Transformers is a popular open-source library that makes it easier 
 
 ## How Hugging Face Transformers Works?
 
-1. ** Pre-trained Model Zoo**: Hugging Face provides a massive collection of pre-trained models for various NLP tasks. These models are trained on huge amounts of text data and can be fine-tuned for specific applications.
+1. **Pre-trained Model Zoo**: Hugging Face provides a massive collection of pre-trained models for various NLP tasks. These models are trained on huge amounts of text data and can be fine-tuned for specific applications.
     
 2.  **Unified API**: The library offers a consistent interface for working with different Transformer models. This means you can use the same code structure to interact with various models, regardless of their underlying architecture (BERT, DistilBERT, etc.).
     
