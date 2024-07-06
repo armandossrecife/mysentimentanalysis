@@ -11,3 +11,15 @@ Enable GPU in your machine.
 ```bash
 python3 main.py
 ```
+
+Input/Outpug
+
+Input:
+```bash
+new_review = "This movie was amazing! Highly recommend."
+```
+
+Ouput:
+```bash
+entiment: Positive
+```
