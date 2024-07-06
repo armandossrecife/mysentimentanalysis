@@ -1,6 +1,7 @@
 from transformers import DistilBertForSequenceClassification, AutoTokenizer
 from datasets import load_dataset
 from transformers import TrainingArguments, Trainer  # Import from transformers
+import torch
 
 # Define model name and task
 model_name = "distilbert-base-uncased-finetuned-sst-2-english"
@@ -41,20 +42,26 @@ trainer = Trainer(
     compute_metrics="accuracy",
 )
 
-print("Aguarde o treinamento do modelo...")
+print("Wait for model training...")
+print("Be patient...")
 # Train the model
 trainer.train()
 
 # Predict sentiment for a new review 
 new_review = "This movie was amazing! Highly recommend."
 inputs = tokenizer(new_review, padding="max_length", truncation=True, return_tensors="pt")
+
+# Move the model and input to GPU if available
+if torch.cuda.is_available():
+  model.to('cuda')
+  inputs.to('cuda')
+
 with torch.no_grad():
   outputs = model(**inputs)
-predictions = torch.argmax(outputs.logits, dim=-1)
+  predictions = torch.argmax(outputs.logits, dim=-1)
 
 # Print the predicted sentiment
 if predictions == 1:
   print("Sentiment: Positive")
 else:
   print("Sentiment: Negative")
-
