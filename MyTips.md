@@ -42,7 +42,7 @@ Imagine translating a sentence from English to French. Here's how a Transformer 
 
 1.  **English Sentence**: The encoder processes the English sentence, understanding the relationships between words.
     
-2. ** Attention**: The decoder attends to relevant parts of the encoder's output, considering how English words connect and how they should be translated in French.
+2. **Attention**: The decoder attends to relevant parts of the encoder's output, considering how English words connect and how they should be translated in French.
     
 3.  **French Sentence**: The decoder generates the French sentence word by word, using attention to ensure the translation is coherent and reflects the context of the English sentence.
    
