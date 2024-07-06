@@ -8,6 +8,8 @@ This code explores the application of sentiment analysis to the [IMDB movie](htt
 
 Enable GPU in your machine. 
 
+**Running this example**: 
+
 ```bash
 python3 main.py
 ```
@@ -23,3 +25,7 @@ Ouput:
 ```bash
 entiment: Positive
 ```
+
+**Using the Google Colabs to try this example**: 
+
+You can try this [notebook](https://github.com/armandossrecife/mysentimentanalysis/blob/main/my_sentiment_analysis.ipynb).
