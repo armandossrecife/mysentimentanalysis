@@ -8,6 +8,10 @@ This code explores the application of sentiment analysis to the [IMDB movie](htt
 
 Enable GPU in your machine. 
 
+**Install the dependencies**:
+
+Install [requirements](https://github.com/armandossrecife/mysentimentanalysis/blob/main/requirements.txt).
+
 **Running this example**: 
 
 ```bash
